@@ -1,0 +1,105 @@
+/* Aufgabenstellung
+
+Wir werden ein Anmeldeformular mit CSS erstellen. Das Formular besteht aus:
+
+Full name (required)
+Address
+Email
+Phone number
+Password
+Terms of policy
+Submit
+
+Ein Design wird vorgeschlagen, aber dein Design kann anders aussehen. */
+
+/* Hinweise
+
+
+Das placeholder-Attribut im Eingabefeld gibt Tipps zum Ausfüllen.
+Um CSS auf ein Formular anzuwenden, verwenden wir die Attributselektoren.
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* html {
+  width: 32rem;
+} */
+section {
+  background-color: rgb(52, 182, 182);
+  border-radius: 1rem 1rem 0 0;
+  width: 31.75rem;
+  margin: 1rem auto 0;
+  padding: 1rem;
+  color: aliceblue;
+}
+form {
+  border-radius: 0 0 1rem 1rem;
+  border: 3px solid rgb(52, 182, 182);
+  width: 31.4rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: HSLA(189, 100%, 56%, 1);
+}
+fieldset {
+  /* height: 100px; */
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: rgb(229, 242, 238);
+  border: none;
+  border-radius: 0.8rem;
+}
+label {
+  display: block;
+  padding: 1rem 0 0.5rem 1.25rem;
+  color: darkgray;
+}
+input {
+  width: 90%;
+  margin-left: 1.25rem;
+}
+span {
+  background-color: rgb(52, 182, 182);
+  color: aliceblue;
+  border-radius: 100%;
+  height: 1.4rem;
+  width: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  margin-left: -26px;
+}
+p {
+  color: aliceblue;
+  padding: 0 0 0.5rem 0.5rem;
+}
+.btn {
+  width: 5.5rem;
+  display: inline;
+  color: darkgrey;
+  border-radius: 5px;
+  border: 0;
+  padding: 0.3rem 1.25rem;
+}
+.btn:hover {
+  color: aliceblue;
+  background-color: rgb(52, 182, 182);
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  width: inherit;
+  height: 1rem;
+  margin-left: 7.5rem;
+}
+input:hover[type="checkbox"] {
+  border-color: red;
+}
+label[for="terms"] {
+  display: inline;
+  padding-left: 0;
+}
+label:hover[for="terms"] {
+  color: red;
+}
